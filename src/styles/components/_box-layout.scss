@@ -1,0 +1,22 @@
+.box-layout {
+   background-image: radial-gradient($blue, $dark-blue);
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   width: 100vw;
+}
+
+.box-layout__box {
+   border-radius: 3px;
+   background: fade-out($color: white, $amount: 0.25);
+   padding: $l-size $m-size;
+   text-align: center;
+   width: 25rem;
+}
+
+.box-layout__title {
+   margin: 0 0 $m-size 0;
+   line-height: 1;
+}

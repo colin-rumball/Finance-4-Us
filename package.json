@@ -1,0 +1,63 @@
+{
+  "name": "finance-4-us",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "parcel, parcel src/index.html --port 3000 -d dev --cache-dir dev/cache",
+    "build:prod": "parcel build src/index.html -d public --cache-dir dev/cache --public-url ./",
+    "server:dev": "nodemon server/server.js",
+    "server:prod": "node server/server.js",
+    "test": "jest",
+    "start": "node server/server.js",
+    "heroku-postbuild": "parcel build src/index.html -d public --cache-dir dev/cache --public-url ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "setupTestFrameworkScriptFile": "./src/tests/setupTests.js"
+  },
+  "dependencies": {
+    "csv": "^5.0.0",
+    "event-stream": "^4.0.1",
+    "express": "^4.16.4",
+    "express-static-gzip": "^1.1.3",
+    "firebase": "^5.5.9",
+    "history": "^4.7.2",
+    "moment": "^2.22.2",
+    "normalize.css": "^8.0.0",
+    "numeral": "^2.0.6",
+    "rc-slider": "^8.6.3",
+    "react": "^16.6.0",
+    "react-dates": "^18.2.2",
+    "react-dom": "^16.6.0",
+    "react-dropzone": "^7.0.1",
+    "react-modal": "^3.6.1",
+    "react-radio-group": "^3.0.3",
+    "react-redux": "^5.1.1",
+    "react-router-dom": "^4.3.1",
+    "react-select": "^2.1.2",
+    "redux": "^4.0.1",
+    "redux-persist": "^5.10.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "cssnano": "^4.1.7",
+    "dotenv": "^6.1.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.6",
+    "parcel-bundler": "^1.10.3",
+    "parcel-plugin-compress": "^1.0.6",
+    "redux-mock-store": "^1.5.3",
+    "sass": "^1.14.3"
+  }
+}
